@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+
+* {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #f7fff7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes name_bg {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+#name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #f7fff7;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(26, 83, 92);
+    background: linear-gradient(346deg, rgba(26, 83, 92, 1) 0%, rgba(78, 205, 196, 1) 40%, rgba(255, 107, 107, 1) 60%, rgba(255, 230, 109, 1) 95%);
+    background-size: 200% 200%;
+letter-spacing: 2em;
+    animation: name_bg 30s ease-in-out infinite;
+}
+
+menu {
+    background-color: #f7fff7;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+menu a {
+    background-color: #4ecdc4;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Trispace', sans-serif;
+}
+
+menu a:link {
+    color: #1A535C;
+    background-color: #4ECDC4;
+}
+
+menu a:visited {
+    color: #1A535C;
+    background-color: #4ECDC4;
+}
+
+menu a:hover {
+    color: #f7fff7;
+    background-color: #1A535C;
+}
+
+menu a:active {
+    color: #1A535C;
+    background-color: #ffe66d;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+article h1 {
+    color: #f7fff7;
+    font-size: 48px;
+    font-family: 'Trispace', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10%;
+}
+
+#o_mnie {
+    background-color: #ff6b6b;
+    width: 95%;
+    height: 31em;
+    display: grid;
+    margin-bottom: 30px;
+    grid-template-areas:
+        "h h z z"
+        "t t z z"
+        "t t z z"
+        "t t z z"
+        "t t z z";
+}
+
+#o_mnie img {
+height: 100%;
+object-fit: contain;
+    padding: 10px;
+}
+
+#o_mnie>h1 {
+    grid-area: h;
+    padding-top: 15px;
+
+}
+
+#mnie_tresc {
+    grid-area: t;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 50px;
+    line-height: 1.7;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+#mnie_zdjecie {
+    grid-area: z;
+   height: 35em;
+}
+
+#technologie {
+    background-color: #f7fff7;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#technologie h1 {
+    color: #1a535c;
+    align-self: normal;
+}
+
+#tech_grid {
+    background-color: #f7fff7;
+    width: 95%;
+    height: 30em;
+    display: grid;
+    grid-template-areas:
+        "h h z z"
+        "t t z z"
+        "t t z z"
+        "t t z z"
+        "t t z z";
+}
+
+#tech_grid ul {
+line-height: 1.15;
+color: #20292f;
+font-family: Roboto,sans-serif;
+box-sizing: border-box;
+margin: 0;
+scroll-behavior: smooth;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+list-style-type: none;
+padding: .5rem 0;
+}
+
+#tech_grid li {
+    line-height: 1.15;
+color: #20292f;
+font-family: Roboto,sans-serif;
+list-style-type: none;
+box-sizing: border-box;
+padding: 0;
+scroll-behavior: smooth;
+margin-right: .5rem;
+margin-left: .5rem;
+padding-right: .5rem;
+padding-left: .5rem;
+flex: 4 0 calc(33.33333% - 1rem);
+max-width: calc(33.33333% - 1rem);
+text-align: left;
+display: flex;
+align-items: center;
+margin-top: 1.7rem;
+margin-bottom: 1.7rem;
+}
+
+.technology__link {
+    line-height: 1.15;
+font-family: Roboto,sans-serif;
+list-style-type: none;
+text-align: left;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+background-color: transparent;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: inherit;
+}
+
+.technology__image {
+    line-height: 1.15;
+font-family: Roboto,sans-serif;
+list-style-type: none;
+text-align: left;
+color: inherit;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+border-style: none;
+display: block;
+width: 100px;
+height: auto;
+filter: saturate(100%);
+transition: 150ms;
+}
+
+.technology__name {
+    font-family: Roboto,sans-serif;
+list-style-type: none;
+text-align: left;
+color: inherit;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+line-height: 1.7;
+font-size: 1rem;
+margin-top: 4px;
+}
+
+
+#kontakt {
+    width: 50%;
+    margin: 50px auto;
+}
+
+#kontakt h2 {
+    font-family: 'Trispace',
+        sans-serif;
+    color: #1A535C;
+    font-size: 2rem;
+
+    position: relative;
+    text-align: center;
+}
+#kontakt form {
+    font-family: 'Montserrat',
+        sans-serif;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#kontakt form input,
+#kontakt form textarea {
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    margin: 10px;
+    color: black;
+    background-color: #FF6B6B;
+    padding: 10px;
+}
+#kontakt form input::placeholder,
+#kontakt form textarea::placeholder {
+    color: black;
+    font-style: italic;
+}
+#kontakt form button {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 10px;
+    background-color: #FF6B6B;
+    padding: 10px;
+}
+#kontakt form button span {
+    transition: all 0.5s ease-in-out;
+    color: black;
+}
+#kontakt form button:hover {
+    cursor: pointer;
+}
+#kontakt form button:hover span {
+    display: block;
+    position: relative;
+    color: #399B9A;
+}
+
+footer {
+    padding: 15px;
+    background-color: #f7fff7;
+    display: flex;
+    color: #1a535c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.foot {
+    flex-basis: 40%;
+    background-color: #ffe66d;
+    padding: 35px;
+}
+
+@media screen and (max-width:1300px) {
+#o_mnie {
+    height: 40em;
+}
+#mnie_zdjecie {
+    margin-top: 6.5em;
+}
+}
+
+@media screen and (max-width:1100px) {
+    article {
+        width: auto;
+    }
+    #o_mnie {
+        height: 30em;
+    }
+    #mnie_zdjecie {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #o_mnie {
+        height: auto;
+        grid-template-areas:
+        "h"
+        "t";
+    }
+    #mnie_zdjecie {
+        display: none;
+    }
+    #name {
+        letter-spacing: 1em;
+    }
+    }
+
+@media screen and (max-width:670px) {
+    menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    menu a {
+        margin: 5px;
+        width: 65%;
+    }
+
+    .foot {
+        flex-basis: 80%;
+        margin: 5px;
+    }
+    #name {
+        letter-spacing: 0px;
+    }
+}
+
